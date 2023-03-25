@@ -23,7 +23,7 @@ A Interpreter which can perform !everything that you can think of, basically it 
 
 ```
   println "Hello World"
-  println 69
+  println 1007
 ```
 
 
@@ -35,7 +35,7 @@ let hello = "World"
 
 println hello
 
-println 69
+println 5000
 
 println "well why I am?"
 ```
