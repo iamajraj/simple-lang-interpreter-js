@@ -1,0 +1,15 @@
+let hello = "hello world"
+
+println hello
+
+let defined_again = "hey buddy how is it going huh?"
+
+println defined_again
+
+let hey = 1000000
+
+println hey
+
+println "hi my name is raj"
+
+println 100
