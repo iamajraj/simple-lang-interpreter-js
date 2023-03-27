@@ -24,7 +24,9 @@ function _println({ rest }) {
     } else {
         valueToPass = VARIABLES[tokenToPrint];
         if (!valueToPass) {
-            throw `\nError -> \nThe variable "${tokenToPrint}" is not defined\n\n`;
+            throw new Error(
+                `\nThe variable "${tokenToPrint}" is not defined\n\n`
+            );
         }
     }
     func(valueToPass);
@@ -62,6 +64,9 @@ const processIt = async (file_loc) => {
                 BUILT_IN_KEYWORDS[first_token]({
                     rest: code_line.slice(first_token.length),
                 });
+            } else if (VARIABLES[first_token]) {
+                let value = second_part.replaceAll(`"`, "").trim();
+                VARIABLES[first_token] = value;
             }
             // DEFINE VARIABLE
             else {
@@ -69,7 +74,9 @@ const processIt = async (file_loc) => {
                     let value = second_part.replaceAll(`"`, "").trim();
                     VARIABLES[second_token] = value;
                 } else {
-                    throw `\nError:\nUnknown keyword -> "${first_token}"\n\n`;
+                    throw new Error(
+                        `\nUnknown keyword -> "${first_token}"\n\n`
+                    );
                 }
             }
         }

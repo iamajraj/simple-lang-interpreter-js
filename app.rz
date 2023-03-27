@@ -1,15 +1,7 @@
-let hello = "hello world"
+let myname = "Raj"
 
-println hello
+myname = "Hi"
 
-let defined_again = "hey buddy how is it going huh?"
+myname = 24034
 
-println defined_again
-
-let hey = 1000000
-
-println hey
-
-println "hi my name is raj"
-
-println 100
+println myname
