@@ -1,7 +1,7 @@
 
 # Simple Lang Interpreter 🐥😴
 
-A Interpreter which can perform !everything that you can think of, basically it can define variables and can print variables and values in the console 🤓
+An Interpreter which can perform !everything that you can think of, basically it can define variables and can print variables and values in the console 🤓
 
 
 
