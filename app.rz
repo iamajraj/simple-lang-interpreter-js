@@ -5,3 +5,4 @@ myname = "Hi"
 myname = 24034
 
 println myname
+println "hello world this is me what's up"
